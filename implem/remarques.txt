@@ -1,0 +1,5 @@
+dans ei_event.c list_actions n'est pas en static alors qu'il pourrait car on restreint son accès au fichier
+
+Notre fonction geometry finalize ne fais pas l'appel rect_invalidate alors qu'elle dervrait
+
+Dans ei_app_invalidate_rect à la toute fin on fait l'union avec *rect et pas clipped ce qui n'est pas logique 
